@@ -2,7 +2,7 @@
 
 This is an end to end project based on UNHCR Refugee Statistics API.
 
-***1. GET DATA:***
+# ***1. GET DATA:***
 
 - Notebook: API UNCHR_Request.ipynb
   
