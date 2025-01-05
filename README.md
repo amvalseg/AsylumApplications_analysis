@@ -82,7 +82,18 @@ There is one measure for each region as an origin region and one for each region
    
 # 7.  Custom Shape Map 🗺️
 
-To apply the world map to the Shape Map visual, we customized the visual using the world-countries.json file. However, when applying it, we discovered that some countries were not being detected. This issue relates to the country names in the origin and reception tables.
+To apply the world map to the Shape Map visual, we customized the visual using the a json file. 
+
+[v1] As the used file contains the ISO3 Country code, the conection is stablished with the columns ISO3 Origin Country and ISO3 Reception Country. It works perfectly without the need for additional adjustments.
+
+👉 You can find this file in this repo: visuals/world.topo.json
+
+🚨 [v0] In the initial version of the report, a JSON file containing all countries was used. However, the border between Morocco and Western Sahara exclusively limited the latter to the eastern zone.  
+
+👉 You can find this file in this repo: visuals/world-countries.json 
+
+The process carried out in that version is described here in case it applies to similar cases or if someone prefers to use this version of the map for any reason:
+However, when applying it, we discovered that some countries were not being detected. This issue relates to the country names in the origin and reception tables.
 
 We identified the countries that were not being highlighted and replaced their names in the dimension tables so that they match the names in the GeoJSON file. Specifically, the following values were replaced:
 
@@ -116,5 +127,6 @@ We identified the countries that were not being highlighted and replaced their n
 By doing this, we ensured that the country names in the data matched the GeoJSON references, allowing the Shape Map visualization to correctly recognize and display all the countries.
 
 This process ensures that the map visualizations are accurate, and all countries in the dataset are properly marked.
+
 
 
