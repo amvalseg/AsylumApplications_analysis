@@ -1,6 +1,6 @@
 # International Asylum Applications flows analysis 🌐
 
-This is an end to end project based on UNHCR Refugee Statistics API.
+This is an end-to-end project based on the UNHCR Refugee Statistics API. The objective of the project is to display the international flows of asylum applications. It provides a better understanding of the scale of this phenomenon worldwide, either through a specific or comparative perspective.
 
 # 1️⃣ Getting Data 🖥️
 
@@ -93,7 +93,8 @@ To apply the world map to the Shape Map visual, we customized the visual using t
 👉 You can find this file in this repo: visuals/world-countries.json 
 
 The process carried out in that version is described here in case it applies to similar cases or if someone prefers to use this version of the map for any reason:
-However, when applying it, we discovered that some countries were not being detected. This issue relates to the country names in the origin and reception tables.
+
+When applying it, we discovered that some countries were not being detected. This issue relates to the country names in the origin and reception tables.
 
 We identified the countries that were not being highlighted and replaced their names in the dimension tables so that they match the names in the GeoJSON file. Specifically, the following values were replaced:
 
